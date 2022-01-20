@@ -2,13 +2,14 @@ var cuadroDeTextoEntrada = document.querySelector("#Entrada")
 var cuadroDeTextoSalida = document.querySelector("#Salida")
 var botonEncriptar = document.querySelector("#encriptar");
 var botonDesencriptar = document.querySelector("#DesEncriptar")
-
+var botoncCopiar = document.querySelector("#CopiarContenido");
 
 botonEncriptar.addEventListener("click", function(event){
     var palabra = "";
     var encriptado = "";
     event.preventDefault();
     palabra=cuadroDeTextoEntrada.value.toLowerCase();
+
     if (/\d/.test(palabra)){alert("No se pueden usar numeros")
     } else {
     for (let i = 0; i < palabra.length; i++){
@@ -19,13 +20,14 @@ botonEncriptar.addEventListener("click", function(event){
         } else if (palabra[i] == "u"){ encriptado = encriptado + "ufat"
         } else { encriptado = encriptado + palabra[i]}
     }};
+
     document.querySelector("#Salida").value = encriptado;
 })
 
 botonDesencriptar.addEventListener("click", function(event){
     event.preventDefault();
     var palabraEncriptada = "";
-    var desencriptada= "";
+
     palabraEncriptada=cuadroDeTextoEntrada.value.toLowerCase();
     if (palabraEncriptada.includes(palabraEncriptada, "ai")){
         palabraEncriptada = palabraEncriptada.replace(/ai/g, "a")
@@ -42,5 +44,12 @@ botonDesencriptar.addEventListener("click", function(event){
     if (palabraEncriptada.includes(palabraEncriptada, "ufat")){
         palabraEncriptada = palabraEncriptada.replace(/ufat/g, "u")
     };
+
     document.querySelector("#Salida").value = palabraEncriptada;
 })
+
+botoncCopiar.addEventListener("click", function(event){
+    var texto=cuadroDeTextoSalida.value;
+    navigator.clipboard.writeText(texto);
+    document.querySelector("#Salida").value = "";    
+});

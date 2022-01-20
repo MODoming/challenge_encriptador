@@ -1,11 +1,14 @@
+
 *{
-    background-color: gray;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0px;
     padding: 0px;
     text-size-adjust: auto;
     align-self: center;
 }
 .titulo {
+    color: whitesmoke;
     margin-top: 15px;    
     text-align: center;
     text-size-adjust: auto;
