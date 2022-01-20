@@ -1,0 +1,40 @@
+*{
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+    text-size-adjust: auto;
+    align-self: center;
+}
+.titulo {
+    margin-top: 15px;    
+    text-align: center;
+    text-size-adjust: auto;
+}
+.Descripcion{
+    margin: 0px aut;
+    text-align: center;
+    text-size-adjust: auto;
+    background-color: whitesmoke;
+}
+.Contenedor {
+    width: 50%;
+    height: 300px;
+    float: none;   
+    background-color: whitesmoke;
+    margin: 0.5em auto;
+    padding: 1em;
+}
+.Cuadros {
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    margin: auto;
+    border-radius: 1em;
+    text-align: center;
+}
+.Boton{
+    width: 45%;
+    height: 15%;
+    margin: 5px auto;
+    background-color: #a4a4a4;
+}
