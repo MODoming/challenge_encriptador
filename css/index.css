@@ -8,7 +8,9 @@
     align-self: center;
 }
 .titulo {
-    color: whitesmoke;
+    color: white;
+    font-weight: 100;
+    font-stretch: wider;
     margin-top: 15px;    
     text-align: center;
     text-size-adjust: auto;
@@ -29,7 +31,7 @@
 }
 .Cuadros {
     width: 100%;
-    height: 70%;
+    height: 200px;
     background-color: white;
     margin: auto;
     border-radius: 1em;
@@ -37,7 +39,7 @@
 }
 .Boton{
     width: 45%;
-    height: 15%;
+    height: 30px;
     margin: 5px auto;
     background-color: #a4a4a4;
 }
