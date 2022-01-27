@@ -22,11 +22,18 @@
     background-color: whitesmoke;
 }
 .Contenedor {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
     width: 50%;
     height: 300px;
     float: none;   
     background-color: whitesmoke;
-    margin: 0.5em auto;
     padding: 1em;
 }
 .Cuadros {
@@ -38,8 +45,24 @@
     text-align: center;
 }
 .Boton{
+    text-align: center;
+    border: solid;
+    border-bottom-style: groove;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    border-radius: 1.25em;
+    transition-duration: 0.08s;
+    margin-left: 1px;
+    margin-right: 1px;
     width: 45%;
-    height: 30px;
+    height: 40px;   
     margin: 5px auto;
     background-color: #a4a4a4;
+}
+footer {
+    text-align: center;
+    margin-top: 8vh;
+    margin-bottom: 10px;
+    width: 100%;
+    color: white;
 }
